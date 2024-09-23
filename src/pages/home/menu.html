@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Poiret+One&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-black navbar-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../home/menu.html">Todos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../itens-pedido/sanduiche.html">Hamburgueres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../itens-pedido/sanduiche.html">Sanduíches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../itens-pedido/salgado.html">Salgados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../itens-pedido/crepes.html">Crepes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../itens-pedido/bebidas.html">Bebidas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="banner"></div>
+
+    <div>
+        <section class="section-burguer">
+            <div class="opcoes-hamburguer" id="cardapio">
+                <div class="card card-hamburguer" style="width: 18rem;">
+                    <img src="../../assets/images/carnes/bife-ancho.jpg" class="card-img-top img-card-hamburguer" alt="Imagem prato com Bife Ancho">
+                    <div class="card-body">
+                        <h5 class="card-title">Filé de Bife Ancho</h5>
+                        <p class="card-text">Com acompanhamento</p>
+                        <p class="preco-hamburguer">R$ 39,90</p>
+                        <div class="div-card">
+                            <button data-produto-id="x-bacon" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity">
+                            <button data-produto-id="x-bacon" class="aumentar">+</button>
+                        </div>
+                        <button data-produto-id="x-bacon" class="btn btn-danger">ADICIONAR
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card card-hamburguer" style="width: 18rem;">
+                    <img src="../../assets/images/carnes/paella.jpg" class="card-img-top img-card-hamburguer" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Paella</h5>
+                        <p class="card-text">Com acompanhamento</p>
+                        <p class="preco-hamburguer">R$ 39,90</p>
+
+                        <div class="div-card">
+                            <button data-produto-id="x-salada" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity">
+                            <button data-produto-id="x-salada" class="aumentar">+</button>
+                        </div>
+
+                        <button data-produto-id="x-salada" class="btn btn-danger">ADICIONAR
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="card card-hamburguer" style="width: 18rem;">
+                    <img src="../../assets/images/bebidas/cerveja.jpg" class="card-img-top img-card-hamburguer" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cerveja</h5>
+                        <p class="card-text">Maiores de 18 anos</p>
+                        <p class="preco-hamburguer">R$ 12,99</p>
+                        
+                        <div class="div-card">
+                            <button data-produto-id="x-frango" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity">
+                            <button data-produto-id="x-frango" class="aumentar">+</button>
+                        </div>
+
+                        <button data-produto-id="x-frango" class="btn btn-danger">ADICIONAR
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="card card-hamburguer" style="width: 18rem;">
+                    <img src="../../assets/images/bebidas/refrigerante.jpg" class="card-img-top img-card-hamburguer" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Refrigerante</h5>
+                        <p class="card-text">Diversos sabores</p>
+                        <p class="preco-hamburguer">R$ 19,99</p>
+                        
+                        <div class="div-card">
+                            <button data-produto-id="x-tudo" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity">
+                            <button data-produto-id="x-tudo" class="aumentar">+</button>
+                        </div>
+
+                        <button data-produto-id="x-tudo" class="btn btn-danger">ADICIONAR
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="card card-hamburguer" style="width: 18rem;">
+                    <img src="../../assets/images/doces/tiramisu.jpg" class="card-img-top img-card-hamburguer" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiramisu</h5>
+                        <p class="card-text">Cada 100g</p>
+                        <p class="preco-hamburguer">R$ 9,99</p>
+                        
+                        <div class="div-card">
+                            <button data-produto-id="x-smash" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity">
+                            <button data-produto-id="x-smash" class="aumentar">+</button>
+                        </div>
+
+                        <button data-produto-id="x-smash" class="btn btn-danger">ADICIONAR
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="card card-hamburguer" style="width: 18rem;">
+                    <img src="../../assets/images/doces/banoffee.png" class="card-img-top img-card-hamburguer"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Banoffe</h5>
+                        <p class="card-text">Cada 100g</p>
+                        <p class="preco-hamburguer">R$ 9,99</p>
+                        
+                        <div class="div-card">
+                            <button data-produto-id="cheese-burguer" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity">
+                            <button data-produto-id="cheese-burguer" class="aumentar">+</button>
+                        </div>
+
+                        <button data-produto-id="cheese-burguer" class="btn btn-danger">ADICIONAR
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="card card-hamburguer" style="width: 18rem;">
+                    <img src="../../assets/images/saladas/salada-ceasar.jpg" class="card-img-top img-card-hamburguer"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Salada Ceasar</h5>
+                        <p class="card-text">Serve uma pessoas</p>
+                        <p class="preco-hamburguer">R$ 19,90</p>
+                        
+                        <div class="div-card">
+                            <button data-produto-id="cheese-burguer" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity">
+                            <button data-produto-id="cheese-burguer" class="aumentar">+</button>
+                        </div>
+
+                        <button data-produto-id="cheese-burguer" class="btn btn-danger">ADICIONAR
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="card card-hamburguer" style="width: 18rem;">
+                    <img src="../../assets/images/saladas/salada-grega.jpg" class="card-img-top img-card-hamburguer"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Salada Grega</h5>
+                        <p class="card-text">Serve uma pessoas</p>
+                        <p class="preco-hamburguer">R$ 19,90</p>
+                        
+                        <div class="div-card">
+                            <button data-produto-id="cheese-burguer" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity">
+                            <button data-produto-id="cheese-burguer" class="aumentar">+</button>
+                        </div>
+
+                        <button data-produto-id="cheese-burguer" class="btn btn-danger">ADICIONAR
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- <footer class="carrinho">
+        <a href="carrinho.html">
+            <img 
+                width="60" 
+                height="60" 
+                src="https://img.icons8.com/ios-filled/50/a20000/shopping-cart.png" 
+                alt="Ícone carrinho" />
+        </a>
+    </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script src="menu.js" defer></script>
+    <!-- <script src="button-card.js" defer></script> -->
+</body>
+</html>
